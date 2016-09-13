@@ -19,10 +19,16 @@
     <AssemblyName>SitecoreBootstrap.TDS.Master</AssemblyName>
     <Name>SitecoreBootstrap.TDS.Master</Name>
     <RootNamespace>SitecoreBootstrap.TDS.Master</RootNamespace>
-    <EnableCodeGeneration>false</EnableCodeGeneration>
+    <EnableCodeGeneration>True</EnableCodeGeneration>
     <ManageRoles>False</ManageRoles>
     <SitecoreDatabase>master</SitecoreDatabase>
     <AssemblyStatus>Exclude</AssemblyStatus>
+    <FieldsForCodeGen>Title,Blob,Shared,Unversioned,Default value,Validation,ValidationText,__Long description,__Short description,__Display name,__Hidden,__Read Only,__Sortorder</FieldsForCodeGen>
+    <CodeGenTargetProject>SitecoreBootstrap.Web</CodeGenTargetProject>
+    <BaseNamespace>SitecoreBootstrap.Web.Models</BaseNamespace>
+    <CodeGenFile>GeneratedClasses.cs</CodeGenFile>
+    <HeaderTransformFile>GlassV3Header.tt</HeaderTransformFile>
+    <BaseTransformFile>GlassV3Item.tt</BaseTransformFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -58,6 +64,14 @@
   </ItemGroup>
   <ItemGroup>
     <ExcludedAssemblies Include="Sitecore.%2a" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeGenTemplate Include="Code Generation Templates\GeneralExtensions.tt" />
+    <CodeGenTemplate Include="Code Generation Templates\GlassV3Header.tt" />
+    <CodeGenTemplate Include="Code Generation Templates\GlassV3Item.tt" />
+    <CodeGenTemplate Include="Code Generation Templates\Helpers.tt" />
+    <CodeGenTemplate Include="Code Generation Templates\Inflector.tt" />
+    <CodeGenTemplate Include="Code Generation Templates\StringExtensions.tt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
 </Project>
