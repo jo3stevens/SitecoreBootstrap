@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreBootstrap.Web", "Si
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "SitecoreBootstrap.TDS.Master", "SitecoreBootstrap.TDS.Master\SitecoreBootstrap.TDS.Master.scproj", "{17123161-02A1-450A-A6AF-ABE38B53A8C0}"
 EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Bootstrap.TDS.Content", "Sitecore.Bootstrap.TDS.Content\Sitecore.Bootstrap.TDS.Content.scproj", "{00E45AB9-55D5-4443-A7CE-A2A505D6E4C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,12 @@ Global
 		{17123161-02A1-450A-A6AF-ABE38B53A8C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17123161-02A1-450A-A6AF-ABE38B53A8C0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{17123161-02A1-450A-A6AF-ABE38B53A8C0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{00E45AB9-55D5-4443-A7CE-A2A505D6E4C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00E45AB9-55D5-4443-A7CE-A2A505D6E4C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00E45AB9-55D5-4443-A7CE-A2A505D6E4C9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{00E45AB9-55D5-4443-A7CE-A2A505D6E4C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00E45AB9-55D5-4443-A7CE-A2A505D6E4C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00E45AB9-55D5-4443-A7CE-A2A505D6E4C9}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

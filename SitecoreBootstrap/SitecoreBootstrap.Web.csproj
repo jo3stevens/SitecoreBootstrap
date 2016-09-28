@@ -146,7 +146,7 @@
   <ItemGroup>
     <Compile Include="App_Start\GlassMapperSc.cs" />
     <Compile Include="App_Start\GlassMapperScCustom.cs" />
-    <Compile Include="GeneratedClasses.cs" />
+    <Compile Include="Models\GeneratedClasses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -157,7 +157,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\" />
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
@@ -182,6 +181,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Layouts\Shared\_Master.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Layouts\FullWidth.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
